@@ -1,0 +1,25 @@
+{
+  "name": "@erutidians/auto-dop",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "cd src && node ."
+  },
+  "contributors": [
+    "Palskie <zaisantillan14@gmail.com>",
+    "Youka <youka.official.ph@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erutidians/auto-dop.git"
+  },
+  "keywords": [
+    "100-days-of-productivity"
+  ],
+  "bugs": {
+    "url": "https://github.com/Erutidians/auto-dop/issues"
+  },
+  "homepage": "https://erutidians.tech"
+}
