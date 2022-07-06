@@ -1,8 +1,6 @@
 <div align="center">
 
-![auto-dop-banner-dark](https://user-images.githubusercontent.com/57343545/177606703-a781a282-704f-4422-a969-92bdc6862f3e.png#gh-dark-mode-only)
-
-![auto-dop-banner-light](https://user-images.githubusercontent.com/57343545/177606757-3ad56083-892c-4554-971f-a23910066ec2.png#gh-light-mode-only)
+![auto-dop-banner](https://user-images.githubusercontent.com/57343545/177624833-3deb3e4b-c9c2-4e33-8fe8-a25004376eb7.png)
 
 <p>
 Automation for creating markdown files for 100 Days of Productivity challenge.
