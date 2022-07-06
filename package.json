@@ -1,6 +1,6 @@
 {
   "name": "@erutidians/auto-dop",
-  "version": "1.0.0-dev",
+  "version": "1.0.1",
   "license": "MIT",
   "type": "module",
   "main": "src/index.js",
