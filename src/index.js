@@ -89,7 +89,13 @@ export function run({ name, github, start, round }) {
 
   const content = `### Today's Progress:\n\n- TODO\n\n### Notes:\n\n- TODO\n\n### Thoughts:\n\n- TODO\n\n### Resources:\n\n- TODO`;
 
-  const footer = `[<< Day ${prevDay}](day${pad(prevDay)}.md) | [Day ${nextDay} >>](day${pad(nextDay)}.md)`;
+  const roundPrevLink = `[<< Round ${round}](README.md)`;
+  const roundNextLink = `[Round ${round} >>](README.md)`;
+
+  const prevDayLink = `[<< Day ${prevDay}](day${pad(prevDay)}.md)}`;
+  const nextDayLink = `[Day ${nextDay} >>](day${pad(nextDay)}.md)`;
+
+  const footer = `${prevDay === 0 ? roundPrevLink : prevDayLink} | ${nextDay === 101 ? roundNextLink : nextDayLink}`;
 
   const template = `${header}\n\n${footer}\n\n${content}\n\n${footer}\n`;
 
