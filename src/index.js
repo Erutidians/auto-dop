@@ -45,7 +45,15 @@ const open = (path) => {
 
 // -------------------------------------------------------------
 
-export function run({ name, github, start, round }) {
+/**
+ * generates a day.md template
+ * @param {Object} user - challenger infos
+ * @param {string} user.name - any name that you're comfortable with
+ * @param {string} user.github - your github username
+ * @param {string} user.start - the date that you will start this challenge (e.g. m/d/yyyy)
+ * @param {number} [user.round=1] - the round of the current challenge
+ */
+export function run({ name, github, start, round = 1 }) {
   let d = new Date();
 
   switch (process.argv[2]) {
