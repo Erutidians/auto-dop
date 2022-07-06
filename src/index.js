@@ -100,7 +100,7 @@ export function run({ name, github, start, round = 1 }) {
   const roundPrevLink = `[<< Round ${round}](README.md)`;
   const roundNextLink = `[Round ${round} >>](README.md)`;
 
-  const prevDayLink = `[<< Day ${prevDay}](day${pad(prevDay)}.md)}`;
+  const prevDayLink = `[<< Day ${prevDay}](day${pad(prevDay)}.md)`;
   const nextDayLink = `[Day ${nextDay} >>](day${pad(nextDay)}.md)`;
 
   const footer = `${prevDay === 0 ? roundPrevLink : prevDayLink} | ${nextDay === 101 ? roundNextLink : nextDayLink}`;
