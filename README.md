@@ -57,11 +57,8 @@ This started as a challenge initially inspired by [Alexander Kallaway](https://g
     ```
     where `$date` can be any valid date format
 
-### Make a Suggestion
-Suggestions and feedbacks through **Issues** and **Discussions** are always welcome! However, make sure to follow [CONTRIBUTING.md](./CONTRIBUTING.md).
-
-### Make a Contribution
-Contributions through **Pull Requests** are always welcome! However, make sure to follow [CONTRIBUTING.md](./CONTRIBUTING.md).
+### Contributing
+Help is always welcome! Please head to [CONTRIBUTING.md](./CONTRIBUTING.md) file to see how to get started.
 
 ## Challengers
 
