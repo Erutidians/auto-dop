@@ -51,14 +51,14 @@ This started as a challenge initially inspired by [Alexander Kallaway](https://g
     ```
 
 ### Make a Suggestion
-Suggestions and feedbacks through **Issues** and **Discussions** are always welcome! However, make sure to follow [CONTRIBUTING.md](./CONTRIBUTING.md).
+Suggestions and feedbacks through **Issues** and **Discussions** are always welcome! However, make sure to follow [CONTRIBUTING.md](./CONTRIBUTING.md/#issues-and-discussions).
 
 ### Make a Contribution
-Contributions through **Pull Requests** are always welcome! However, make sure to follow [CONTRIBUTING.md](./CONTRIBUTING.md).
+Contributions through **Pull Requests** are always welcome! However, make sure to follow [CONTRIBUTING.md](./CONTRIBUTING.md/#pull-requests).
 
 ## Challengers
 
-Note: if you want to add yourself here in the list, fork this repository and submit a PR and wait for it to be reviewed and merged. More details can be found at [CONTRIBUTING.md](./CONTRIBUTING.md) so <u>make sure to follow that</u> or else your PR <b>will be immediately closed</b>.
+Note: if you want to add yourself here in the list, fork this repository and submit a PR and wait for it to be reviewed and merged. More details can be found at [CONTRIBUTING.md](./CONTRIBUTING.md/#challengers) so <u>make sure to follow that</u> or else your PR <b>will be immediately closed</b>.
 
 auto-dop has been used by these amazing challengers, check out their glorious journeys:
 
