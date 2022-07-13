@@ -23,7 +23,7 @@ Before getting started to contributing, please note that we have a [code of cond
 - Use awesome github markdown formats, if possible and really needed. You can include headers, links, images, basically everything github markdown supports.
 - Use our awesome labels! Your issues should labeled properly using the pre-determined labels that fit it best.
 - (For Discussions) Use categories that fit it best!
-- Last but not the least, remember to follow our [code of conduct](#code-of-conduct).
+- Last but not the least, remember to follow our [code of conduct](./CODE_OF_CONDUCT.md).
 
 Congratulations! You just submitted us a valued feedback.
 
@@ -41,9 +41,9 @@ Greetings, everyone! Here's how you can enlist yourself as one of our esteemed C
     e.g.:
     > `- [yrnmsk](https://github.com/yrnmsk/100-days-of-productivity)`
 
-3. Save, then Commit as `feat(name): add challenger`, e.g.:
+3. Save, then Commit as `feat(challenger): add name`, e.g.:
 
-    > feat(yrnmsk): add challenger
+    > feat(challenger): add yrnmsk
 
     and submit a pull request, using your same commit message.
 
@@ -59,7 +59,7 @@ Closed pull requests due to this reason however can still be reopened as long as
 
     It is highly expected that you **fork our repository** and **make your own branch**. You should **never touch** the branches that were already present after forking our repository.
 
-    You can name your branch whatever you want, however, you still need to follow our [code of conduct](#code-of-conduct).
+    You can name your branch whatever you want, however, you still need to follow our [code of conduct](./CODE_OF_CONDUCT.md).
 
 2. Making and Commiting your changes
 
