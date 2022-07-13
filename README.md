@@ -32,8 +32,21 @@ This started as a challenge initially inspired by [Alexander Kallaway](https://g
         <li>make sure you have this line to your <code>package.json</code></li>
         <pre><code>"type": "module"</code></pre>
         <li>you can compare your package.json to our package.json from our <a href='https://github.com/Erutidians/100-days-of-productivity' target='_blank'>template repository</a> if you encounter some problems.</li>
-    </ul>
-</ul>
+        <li>create an <code>index.js</code> and paste this template code</li>
+
+<pre><code>import { run } from '@erutidians/auto-dop';
+
+// ! change this.
+const user = {
+  name: 'Palskie',   // change this to any name that you're comfortable with.
+  github: 'plskz',   // your github username.
+  start: '6/1/2022', // the date that you will start this challenge (e.g. m/d/yyyy)
+  round: 1, // the round number you currently are in.
+};
+
+run(user);</code></pre>
+
+</ul></ul>
 
 ### Use (Commands)
 
