@@ -84,8 +84,7 @@ export function run({ name, github, start, round = 1 }) {
   const weekName = weeks[d.getDay()];
   const monthName = months[month];
 
-  const diff =
-    Math.floor((Date.parse(CURRENT) - Date.parse(start)) / 86400000) + 1;
+  const diff = Math.floor((Date.parse(CURRENT) - Date.parse(start)) / 86400000) + 1;
   const [prevDay, nextDay] = [diff - 1, diff + 1];
 
   const currentDayChallenge = `Day ${diff}`;
@@ -110,9 +109,7 @@ export function run({ name, github, start, round = 1 }) {
   const prevDayLink = `[<< Day ${prevDay}](day${pad(prevDay)}.md)`;
   const nextDayLink = `[Day ${nextDay} >>](day${pad(nextDay)}.md)`;
 
-  const footer = `${prevDay === 0 ? roundPrevLink : prevDayLink} | ${
-    nextDay === 101 ? roundNextLink : nextDayLink
-  }`;
+  const footer = `${prevDay === 0 ? roundPrevLink : prevDayLink} | ${nextDay === 101 ? roundNextLink : nextDayLink}`;
 
   const template = `${header}\n\n${footer}\n\n${content}\n\n${footer}\n`;
 
