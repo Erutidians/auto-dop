@@ -54,18 +54,24 @@ const open = (path) => {
  * @param {number} [user.round=1] - the round of the current challenge
  */
 export function run({ name, github, start, round = 1 }) {
+  const arg2 = process.argv[2];
+  const validDate = /^(?:(?:(?:0?[13578]|1[02])(\/|-|\.)31)\1|(?:(?:0?[1,3-9]|1[0-2])(\/|-|\.)(?:29|30)\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:0?2(\/|-|\.)29\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:(?:0?[1-9])|(?:1[0-2]))(\/|-|\.)(?:0?[1-9]|1\d|2[0-8])\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/;
   let d = new Date();
 
-  switch (process.argv[2]) {
-    case 'prev':
+  switch (true) {
+    case /prev/.test(arg2):
       const prev = new Date(d.getTime());
       prev.setDate(d.getDate() - 1);
       d = prev;
       break;
-    case 'next':
+    case /next/.test(arg2):
       const next = new Date(d.getTime());
       next.setDate(d.getDate() + 1);
       d = next;
+      break;
+    case validDate.test(arg2):
+      const regexDate = new Date(arg2);
+      d = regexDate;
       break;
   }
 
@@ -78,7 +84,8 @@ export function run({ name, github, start, round = 1 }) {
   const weekName = weeks[d.getDay()];
   const monthName = months[month];
 
-  const diff = Math.floor((Date.parse(CURRENT) - Date.parse(start)) / 86400000) + 1;
+  const diff =
+    Math.floor((Date.parse(CURRENT) - Date.parse(start)) / 86400000) + 1;
   const [prevDay, nextDay] = [diff - 1, diff + 1];
 
   const currentDayChallenge = `Day ${diff}`;
@@ -103,7 +110,9 @@ export function run({ name, github, start, round = 1 }) {
   const prevDayLink = `[<< Day ${prevDay}](day${pad(prevDay)}.md)`;
   const nextDayLink = `[Day ${nextDay} >>](day${pad(nextDay)}.md)`;
 
-  const footer = `${prevDay === 0 ? roundPrevLink : prevDayLink} | ${nextDay === 101 ? roundNextLink : nextDayLink}`;
+  const footer = `${prevDay === 0 ? roundPrevLink : prevDayLink} | ${
+    nextDay === 101 ? roundNextLink : nextDayLink
+  }`;
 
   const template = `${header}\n\n${footer}\n\n${content}\n\n${footer}\n`;
 
