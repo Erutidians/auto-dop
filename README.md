@@ -55,7 +55,7 @@ This started as a challenge initially inspired by [Alexander Kallaway](https://g
     ```bash
     $ node index.js $date
     ```
-    where `$date` can be any valid date format
+    where `$date` can be any valid date format (e.g. M/D/YYYY or MM/DD/YYYY)
 
 ### Contributing
 Help is always welcome! Please head to [CONTRIBUTING.md](./CONTRIBUTING.md) file to see how to get started.
