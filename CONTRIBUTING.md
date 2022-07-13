@@ -4,7 +4,7 @@ Welcome! When contributing to Erutidians' auto-dop, we require you to follow our
 
 ## Getting Started
 
-Before getting started to contributing, please note that we have a [code of conduct](#code-of-conduct), please follow it in all your interactions with the project.
+Before getting started to contributing, please note that we have a [code of conduct](./CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
 
 ### Issues and Discussions
 
