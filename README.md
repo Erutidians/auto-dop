@@ -49,12 +49,14 @@ This started as a challenge initially inspired by [Alexander Kallaway](https://g
     ```bash
     $ node index.js next
     ```
+- creates any date
+    ```bash
+    $ node index.js $date
+    ```
+    where `$date` can be any valid date format (e.g. M/D/YYYY or MM/DD/YYYY)
 
-### Make a Suggestion
-Suggestions and feedbacks through **Issues** and **Discussions** are always welcome! However, make sure to follow [CONTRIBUTING.md](./CONTRIBUTING.md/#issues-and-discussions).
-
-### Make a Contribution
-Contributions through **Pull Requests** are always welcome! However, make sure to follow [CONTRIBUTING.md](./CONTRIBUTING.md/#pull-requests).
+### Contributing
+Help is always welcome! Please head to [CONTRIBUTING.md](./CONTRIBUTING.md) file to see how to get started.
 
 ## Challengers
 
