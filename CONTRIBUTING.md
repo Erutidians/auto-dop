@@ -38,10 +38,9 @@ Greetings, everyone! Here's how you can enlist yourself as one of our esteemed C
 
     You can address yourself as either your github display name, github username, or real name, as long as it will be linked to your public repository of the 100 days of productivity.
 
-    e.g.:
     > `- [yrnmsk](https://github.com/yrnmsk/100-days-of-productivity)`
 
-3. Save, then Commit as `feat(challenger): add name`, e.g.:
+3. Save, then Commit as `feat(challenger): add name`:
 
     > feat(challenger): add yrnmsk
 
