@@ -19,24 +19,33 @@ This started as a challenge initially inspired by [Alexander Kallaway](https://g
 - Using our **template repository**
     - generate from template by simply clicking the generate button in [here](https://github.com/Erutidians/100-days-of-productivity).
     - clone and go to your generated repository.
+
         ```bash
         $ git clone https://github.com/your-username/your-generated-repository.git
         ```
+
     - then install
+
         ```bash
         $ npm install
         ```
+
 - Or **manually**, if you already have your own repository
     - install `@erutidians/auto-dop`
+
         ```bash
         $ npm install @erutidians/auto-dop
         ```
+
     - make sure you have this line to your `package.json`:
+
         ```json
         "type": "module"
         ```
+
     - you can compare your `package.json` from ours in our [template repository](https://github.com/Erutidians/100-days-of-productivity) if you encounter some problems.
     - create an `index.js` and paste this template code:
+
         ```js
         import { run } from '@erutidians/auto-dop';
         
