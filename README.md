@@ -89,11 +89,12 @@ This started as a challenge initially inspired by [Alexander Kallaway](https://g
   > where `$date` can be any valid date format (e.g. `mm/dd/yyyy` or `m/d/yyyy`)
 
 ### Contributing
+
 Help is always welcome! Please head to [CONTRIBUTING.md](./.github/CONTRIBUTING.md) file to see how to get started.
 
 ## Challengers
 
-Note: if you want to add yourself here in the list, fork this repository and submit a PR and wait for it to be reviewed and merged. More details can be found at [CONTRIBUTING.md](./.github/CONTRIBUTING.md/#challengers) so <u>make sure to follow that</u> or else your PR <b>will be immediately closed</b>.
+Note: if you want to add yourself here in the list, fork this repository and submit a PR and wait for it to be reviewed and merged. More details can be found at [CONTRIBUTING.md](./.github/CONTRIBUTING.md/#challengers) so make sure to follow that or else your PR **will be immediately closed**.
 
 auto-dop has been used by these amazing challengers, check out their glorious journeys:
 
