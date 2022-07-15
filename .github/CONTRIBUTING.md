@@ -62,7 +62,27 @@ Closed pull requests due to this reason however can still be reopened as long as
 
 2. Making and Commiting your changes
 
+   Your commits should always follow [conventional commits](https://conventionalcommits.org/en/v1.0.0)' expectations and standards. Simple examples are
+
+   > feat(challenger): add yrnmsk
+
+   and
+
+   > chore: update readme
+
 3. Submitting your Pull Request
+
+   Your pull request title should be either simply just the commit message briefly indicating what the changes are mainly about, or an answer to the issue title in a conventional commit's style.
+
+   A simple example of the latter would be:
+
+   if your example issue title is
+
+   > Missing the contributing.md that is linked in the readme.md
+
+   then your example pull request title could be
+
+   > chore: add missing contributing.md in readme.md
 
 4. Waiting for a Review
 
