@@ -17,7 +17,7 @@ This started as a challenge initially inspired by [Alexander Kallaway](https://g
 
 - Using our **template repository**
 
-  - generate from template by simply clicking the generate button in [here](https://github.com/Erutidians/100-days-of-productivity).
+  - generate a template by simply clicking the generate button in [here](https://github.com/Erutidians/100-days-of-productivity).
   - clone and go to your generated repository.
 
     ```bash
@@ -100,3 +100,4 @@ auto-dop has been used by these amazing challengers, check out their glorious jo
 
 - [yrnmsk](https://github.com/yrnmsk/100-days-of-productivity)
 - [plskz](https://github.com/plskz/100-days-of-productivity)
+- [daddygi](https://github.com/daddygi/100-days-of-productivity)
