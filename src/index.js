@@ -99,7 +99,7 @@ export function run({ name, github, start, round = 1 }) {
       <br>
       <small>${currentDate}</small>
     </sub>
-  </div>`;
+</div>`;
 
   const content = `### Today's Progress:\n\n- TODO\n\n### Notes:\n\n- TODO\n\n### Thoughts:\n\n- TODO\n\n### Resources:\n\n- TODO`;
 
