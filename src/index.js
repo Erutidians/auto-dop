@@ -92,13 +92,13 @@ export function run({ name, github, start, round = 1 }) {
   const today = `\n\t\t${currentDayChallenge}\n\t${currentDate}\n`;
 
   const header = `<div align="center">
-    <h1>Round ${round}</h1>
-    <p>${currentDayChallenge}</p>
-    <sub>
-      Author: <a href="https://github.com/${github}" target="_blank">${name}</a>
-      <br>
-      <small>${currentDate}</small>
-    </sub>
+  <h1>Round ${round}</h1>
+  <p>${currentDayChallenge}</p>
+  <sub>
+    Author: <a href="https://github.com/${github}" target="_blank">${name}</a>
+    <br>
+    <small>${currentDate}</small>
+  </sub>
 </div>`;
 
   const content = `### Today's Progress:\n\n- TODO\n\n### Notes:\n\n- TODO\n\n### Thoughts:\n\n- TODO\n\n### Resources:\n\n- TODO`;
