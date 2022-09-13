@@ -34,7 +34,9 @@ const pad = (x, y = 3) => x.toString().padStart(y, '0');
 const error = (msg) => console.log(RED, msg);
 const success = (msg) => console.log(GREEN, msg);
 
-const open = (path) => {
+const open = (path, vscode) => {
+  if (!vscode) return;
+
   exec(`code ${path}`, (error, stdout, stderr) => {
     if (error) return console.log(`error: ${error.message}`);
     if (stderr) return console.log(`stderr: ${stderr}`);
@@ -52,8 +54,9 @@ const open = (path) => {
  * @param {string} user.github - your github username
  * @param {string} user.start - the date that you will start this challenge (e.g. m/d/yyyy)
  * @param {number} [user.round=1] - the round of the current challenge
+ * @param {boolean} [user.vscode=true] - whether to open the file after generating it
  */
-export function run({ name, github, start, round = 1 }) {
+export function run({ name, github, start, round = 1, vscode = true }) {
   const arg2 = process.argv[2];
   const validDate = /^(?:(?:(?:0?[13578]|1[02])(\/|-|\.)31)\1|(?:(?:0?[1,3-9]|1[0-2])(\/|-|\.)(?:29|30)\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:0?2(\/|-|\.)29\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:(?:0?[1-9])|(?:1[0-2]))(\/|-|\.)(?:0?[1-9]|1\d|2[0-8])\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/;
   let d = new Date();
@@ -101,7 +104,8 @@ export function run({ name, github, start, round = 1 }) {
   </sub>
 </div>`;
 
-  const content = `### Today's Progress:\n\n- TODO\n\n### Notes:\n\n- TODO\n\n### Thoughts:\n\n- TODO\n\n### Resources:\n\n- TODO`;
+  const contents = ["Today's Progress", 'Notes', 'Thoughts', 'Resources'];
+  const content = contents.map((c) => `### ${c}:\n\n- TODO`).join('\n\n');
 
   const roundPrevLink = `[<< Round ${round}](README.md)`;
   const roundNextLink = `[Round ${round} >>](README.md)`;
@@ -124,12 +128,13 @@ export function run({ name, github, start, round = 1 }) {
       // for safety reasons, to avoid overwriting existing files
       error(`${path} already exists.`);
       error(`delete if you want to override it`);
-      open(path);
     } else {
       fs.writeFileSync(path, template);
       success(`${path} created successfully`);
-      open(path);
     }
+
+    open(path, vscode);
+
   } catch (err) {
     console.error(err);
   }
