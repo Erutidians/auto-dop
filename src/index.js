@@ -107,13 +107,13 @@ export function run({ name, github, start, round = 1, vscode = true }) {
   const contents = ["Today's Progress", 'Notes', 'Thoughts', 'Resources'];
   const content = contents.map((c) => `### ${c}:\n\n- TODO`).join('\n\n');
 
-  const roundPrevLink = `[<< Round ${round}](README.md)`;
-  const roundNextLink = `[Round ${round} >>](README.md)`;
+  const prevRoundLink = `[<< Round ${round}](README.md)`;
+  const nextRoundLink = `[Round ${round} >>](README.md)`;
 
   const prevDayLink = `[<< Day ${prevDay}](day${pad(prevDay)}.md)`;
   const nextDayLink = `[Day ${nextDay} >>](day${pad(nextDay)}.md)`;
 
-  const footer = `${prevDay === 0 ? roundPrevLink : prevDayLink} | ${nextDay === 101 ? roundNextLink : nextDayLink}`;
+  const footer = `${prevDay === 0 ? prevRoundLink : prevDayLink} | ${nextDay === 101 ? nextRoundLink : nextDayLink}`;
 
   const template = `${header}\n\n${footer}\n\n${content}\n\n${footer}\n`;
 
