@@ -100,4 +100,3 @@ auto-dop has been used by these amazing challengers, check out their glorious jo
 
 - [yrnmsk](https://github.com/yrnmsk/100-days-of-productivity)
 - [plskz](https://github.com/plskz/100-days-of-productivity)
-- [daddygi](https://github.com/daddygi/100-days-of-productivity)
