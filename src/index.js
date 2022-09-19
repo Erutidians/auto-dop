@@ -90,6 +90,9 @@ export function run({ name, github, start, round = 1, vscode = true }) {
   const diff = Math.floor((Date.parse(CURRENT) - Date.parse(start)) / 86400000) + 1;
   const [prevDay, nextDay] = [diff - 1, diff + 1];
 
+  if (prevDay < 0) return error('\nInvalid date!');
+  if (nextDay > 101) return error('\nYou already finished the challenge!');
+
   const currentDayChallenge = `Day ${diff}`;
   const currentDate = `${monthName} ${day}, ${year} - ${weekName}`;
   const today = `\n\t\t${currentDayChallenge}\n\t${currentDate}\n`;
