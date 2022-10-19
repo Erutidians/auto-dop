@@ -1,5 +1,6 @@
 {
   "name": "@erutidians/auto-dop",
+  "description": "Automation for creating markdown files for 100 Days of Productivity challenge.",
   "version": "1.0.0-dev",
   "license": "MIT",
   "type": "module",
