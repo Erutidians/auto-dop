@@ -33,7 +33,7 @@ Congratulations! You just submitted us a valued feedback.
 
 Greetings, everyone! Here's how you can enlist yourself as one of our esteemed Challengers that uses our npm package.
 
-1. Navigate to [#challengers](./README.md/#challengers).
+1. Navigate to [#challengers](./README.md#challengers).
 2. Add yourself at the bottom of the list.
 
    You can address yourself as either your github display name, github username, or real name, as long as it will be linked to your public repository of the 100 days of productivity.
