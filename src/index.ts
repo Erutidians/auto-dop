@@ -1,8 +1,6 @@
 import fs from 'fs';
 import { error,MONTHS,open, pad, success, WEEKS } from './utils';
 
-console.log("test npm link");
-
 /**
  * @param {string} user.name - any name that you're comfortable with
  * @param {string} user.github - your github username
@@ -106,5 +104,3 @@ export function run({ name, github, start, round = 1, vscode = true }: User) {
     console.error(err);
   }
 }
-
-console.log("finish runnin");
