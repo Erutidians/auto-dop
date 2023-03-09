@@ -39,7 +39,7 @@ This Code of Conduct applies within all community spaces, and also applies when 
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the Core Members responsible for enforcement at our official [Discord Server](https://discord.gg/5vatpedtsq) by contacting an admin in [#report](https://discord.com/channels/972258637378625597/996868532430184488) channel, or email `report@erutidians.tech`. All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the Core Members responsible for enforcement at our official [Discord Server](https://dub.sh/Discord-Erutidians) by contacting an admin in [#report](https://discord.com/channels/972258637378625597/996868532430184488) channel, or email `report@erutidians.tech`. All complaints will be reviewed and investigated promptly and fairly.
 
 All Core Members are obligated to respect the privacy and security of the reporter of any incident.
 
